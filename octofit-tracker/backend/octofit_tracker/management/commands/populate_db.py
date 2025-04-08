@@ -31,8 +31,8 @@ class Command(BaseCommand):
         team2.save()
 
         # Assign members to teams
-        team1.members = [users[0], users[1], users[2]]
-        team2.members = [users[3], users[4]]
+        team1.members.set([users[0], users[1], users[2]])
+        team2.members.set([users[3], users[4]])
         team1.save()
         team2.save()
 
